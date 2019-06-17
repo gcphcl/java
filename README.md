@@ -197,3 +197,9 @@ ${GEN_ROOT}/gen/openapi/java.sh kubernetes ./settings
 
 This should run through a long-ish build process involving `docker` and eventually result in a new set of
 generated code in the `kubernetes` directory.
+
+Command to compile the code without errors
+
+```sh
+mvn -Dhttps.protocols=TLSv1.2 -DskipTests clean package
+```
